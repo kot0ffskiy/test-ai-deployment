@@ -28,7 +28,7 @@ except ValueError:
 
 @app.route('/')
 def upload_form():
-    return render_template('home.html')
+    return "Hello, user!"
 
 
 @app.route('/upload_images', methods=['POST'])
