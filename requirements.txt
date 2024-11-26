@@ -8,3 +8,4 @@ torchvision
 scikit-image
 trimesh
 matplotlib
+ipython
