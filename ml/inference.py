@@ -1,16 +1,5 @@
 import trimesh
-import os
-import torch
-from torch.utils.data import Dataset, DataLoader
-from PIL import Image
-from torchvision import transforms
-import numpy as np
-import trimesh
 from skimage import measure
-
-
-import cv2
-import math
 
 #################################################################################### Алгоритм
 def execute(front_image, side_image, top_image, scad_path, openscad_path, output_stl):
@@ -845,15 +834,8 @@ def execute(front_image, side_image, top_image, scad_path, openscad_path, output
         # Add the last subtree
         subtree.append(present)
         print("Subtree:", len(subtree))
-
-
-    import copy
-    import json
-    import os
-    import shutil
-    import cv2
+        
     import numpy as np
-    from matplotlib import pyplot as plt
     from IPython.display import Image
 
 
@@ -976,7 +958,6 @@ def execute(front_image, side_image, top_image, scad_path, openscad_path, output
         tratio = float(d3["ratio"]) * 1.73 
         Convert(front_image, side_image, top_image,fratio, sratio, tratio, scad_path)
 
-    import os
     import subprocess
     def scad_to_stl(input_scad, output_stl):
 
